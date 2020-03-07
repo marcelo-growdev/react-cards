@@ -6,7 +6,6 @@ import { Provider } from 'react-redux';
 import Routes from './routes';
 import { store, persistor } from './store';
 
-import Header from './components/Header';
 import GlobalStyle from './styles/global';
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <BrowserRouter>
-          <Header />
           <Routes />
           <GlobalStyle />
         </BrowserRouter>
